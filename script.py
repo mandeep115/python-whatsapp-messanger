@@ -10,30 +10,28 @@ import csv
 
 numbers = []  # We will store our numbers here
 
-# # Going to open csv file
-# with open("docs/names.csv", 'r') as file:  # Fancy way to open files
+# Going to open csv file
+with open("docs/names.csv", 'r') as file:  # Fancy way to open files
 
-#     reader = csv.reader(file)  # Reader now has each line of csv file
+    reader = csv.reader(file)  # Reader now has each line of csv file
 
-#     # Uncomment this to limit number of peoples
-#     # i = 0
-#     for row in reader:  # We will itrate over every line 🔁
+    # Uncomment this to limit number of peoples
+    # i = 0
+    for row in reader:  # We will itrate over every line 🔁
 
-#         # Replace with number of people you want to send message
-#         # if i > 8:
-#         #     break
+        # Replace with number of people you want to send message
+        # if i > 8:
+        #     break
 
-#         # Our last col is of numbers so we will append that col to our numbers array
-#         numbers.append(row[-1])
-#         # This line for limiting peoples
-#         # i = i + 1
+        # Our last col is of numbers so we will append that col to our numbers array
+        numbers.append(row[-1])
+        # This line for limiting peoples
+        # i = i + 1
 
-# # 1st row is of heading in our csv file so we will cut 1st row 🔢
-# numbers = numbers[1:]
+# 1st row is of heading in our csv file so we will cut 1st row 🔢
+numbers = numbers[1:]
 
-message = r'''
-*Dear student,%0AYou have successfully registered for Preliminary Workshop of Eureka! Junior 2020 Competition.%0A%0ADate: 20th September%0ATime: 03:00 PM - 04:30 PM%0A%0ARequirement: Google Meet App%0A%0ATo attend the workshop you will get a Google Meet link on 19th September on your registered e-mail and whatsapp number.%0A%0ARegards,%0ATeam E-Cell, SSGMCE
-'''  # Enter message that you want to send
+message = r'''Test%0AHi%0AHello🤖'''  # Enter message that you want to send
 
 # Now comes the juciy part
 for number in numbers:  # Loop over numbers array 🔁
