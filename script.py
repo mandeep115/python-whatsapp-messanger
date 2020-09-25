@@ -40,7 +40,7 @@ for number in numbers:  # Loop over numbers array 🔁
         f'https://api.whatsapp.com/send?phone=+91{number}&text={message}')
     # giving our system time to open chrome
     time.sleep(10) # Increase the time of sleep if your internet or System is slow
-    keyboard.press_and_release('enter')
+    keyboard.press_and_release('enter') # Simulate key press of "Enter"
 
 
 # We are using an api in a way which it was not meant to be used
