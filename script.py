@@ -1,7 +1,9 @@
-# Created at Tue Sep 15 12:47:36 2020 ⏲
-# By. Mandeep
-# Auto Whatsapp message sender 🚀
-# Check end of the code for message cheat-sheet
+""" 
+ Created at Tue Sep 15 12:47:36 2020 ⏲
+ By. Mandeep
+ Auto Whatsapp message sender 🚀
+ Check end of the code for message cheat-sheet
+"""
 
 import webbrowser
 import keyboard
@@ -43,19 +45,21 @@ for number in numbers:  # Loop over numbers array 🔁
     keyboard.press_and_release('enter') # Simulate key press of "Enter"
 
 
-# We are using an api in a way which it was not meant to be used
-# we can't just type our message and expect it to work as normal
-# message, as the message will be converted to an url and all
-# it's rich text will be lost.
+"""
+ We are using an api in a way which it was not meant to be used
+ we can't just type our message and expect it to work as normal
+ message, as the message will be converted to an url and all
+ it's rich text will be lost.
 
-# SO! we are going to use URL Encoding Reference to emuilate some
-# special charecters.
+ SO! we are going to use URL Encoding Reference to emuilate some
+ special charecters.
 
-#### In a nutshell just use %0A before every next line ####
+### In a nutshell just use %0A before every next line ####
 
-# Here's a list of things you might find usefull
+ Here's a list of things you might find usefull
 
-# %03   Enter (carriage return)
-# %0A   line feed (Works same as enter)
+ %03   Enter (carriage return)
+ %0A   line feed (Works same as enter)
 
-# For a full-list visit https://www.w3schools.com/tags/ref_urlencode.ASP
+ For a full-list visit https://www.w3schools.com/tags/ref_urlencode.ASP
+"""
